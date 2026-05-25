@@ -18,7 +18,13 @@
 html {
   scroll-behavior: smooth;
 }
-
+.tech-tag::after {
+      content: attr(data-level);
+      color: #64748b; /* Sleek slate color for the percentage text */
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-left: 4px;
+}
 body {
   background-color: var(--base-dark);
   color: var(--text-primary);
